@@ -1,0 +1,115 @@
+[
+  {
+    "label": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true
+    },
+    "expected": {
+      "score": 105,
+      "level": "low"
+    },
+    "originalInput": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+    "input": {
+      "idade": 65,
+      "fc": 72,
+      "pas": 145,
+      "cr": 0.9,
+      "killip": "1",
+      "st": true,
+      "enz": true
+    },
+    "expected": {
+      "score": 140,
+      "level": "mid",
+      "raw": {
+        "prob": 2.9
+      }
+    },
+    "originalInput": {
+      "idade": 65,
+      "fc": 72,
+      "pas": 145,
+      "cr": 0.9,
+      "killip": "1",
+      "st": true,
+      "enz": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+    "input": {
+      "idade": 72,
+      "fc": 95,
+      "pas": 125,
+      "cr": 1.3,
+      "killip": "2",
+      "st": true,
+      "enz": true
+    },
+    "expected": {
+      "score": 196,
+      "level": "high",
+      "raw": {
+        "prob": 16
+      }
+    },
+    "originalInput": {
+      "idade": 72,
+      "fc": 95,
+      "pas": 125,
+      "cr": 1.3,
+      "killip": "2",
+      "st": true,
+      "enz": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+    "input": {
+      "idade": 85,
+      "fc": 120,
+      "pas": 85,
+      "cr": 2.5,
+      "killip": "4",
+      "pcr": true,
+      "st": true,
+      "enz": true
+    },
+    "expected": {
+      "score": 329,
+      "level": "high",
+      "raw": {
+        "prob": 52
+      }
+    },
+    "originalInput": {
+      "idade": 85,
+      "fc": 120,
+      "pas": 85,
+      "cr": 2.5,
+      "killip": "4",
+      "pcr": true,
+      "st": true,
+      "enz": true
+    },
+    "expandedZeroOptions": []
+  }
+]

@@ -1,0 +1,239 @@
+{
+  "tool": {
+    "id": "grace",
+    "title": "Escore GRACE (mortalidade hospitalar)",
+    "short": "Risco de morte na síndrome coronariana aguda",
+    "desc": "Calcule o escore GRACE da síndrome coronariana aguda: pontos do nomograma de Granger, probabilidade de óbito hospitalar e risco para estratégia invasiva.",
+    "lead": "Estima o risco de morte durante a internação em todo o espectro da síndrome coronariana aguda, com 8 variáveis da admissão; na SCA sem supra de ST, orienta o momento da estratégia invasiva.",
+    "spec": [
+      "cardiologia",
+      "medicina-de-emergencia",
+      "medicina-intensiva"
+    ],
+    "fields": [
+      [
+        "idade",
+        "Idade",
+        "num",
+        {
+          "min": 18,
+          "max": 110,
+          "unit": "anos",
+          "ph": "65"
+        }
+      ],
+      [
+        "fc",
+        "Frequência cardíaca",
+        "num",
+        {
+          "min": 20,
+          "max": 250,
+          "unit": "bpm",
+          "ph": "80"
+        }
+      ],
+      [
+        "pas",
+        "PA sistólica",
+        "num",
+        {
+          "min": 40,
+          "max": 300,
+          "unit": "mmHg",
+          "ph": "130"
+        }
+      ],
+      [
+        "cr",
+        "Creatinina",
+        "num",
+        {
+          "min": 0.1,
+          "max": 20,
+          "step": 0.01,
+          "unit": "mg/dL",
+          "ph": "1,0"
+        }
+      ],
+      [
+        "killip",
+        "Classe de Killip",
+        "radio",
+        {
+          "opts": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV"
+          }
+        }
+      ],
+      [
+        "pcr",
+        "Parada cardíaca na admissão",
+        "chk",
+        []
+      ],
+      [
+        "st",
+        "Desvio do segmento ST",
+        "chk",
+        []
+      ],
+      [
+        "enz",
+        "Marcadores de necrose elevados (troponina/CK-MB)",
+        "chk",
+        []
+      ]
+    ],
+    "formula": "<p>Pontos do nomograma (Granger 2003): <strong>idade</strong> &lt; 30 = 0, 30–39 = 8, 40–49 = 25, 50–59 = 41, 60–69 = 58, 70–79 = 75, 80–89 = 91, ≥ 90 = 100 · <strong>FC</strong> &lt; 50 = 0, 50–69 = 3, 70–89 = 9, 90–109 = 15, 110–149 = 24, 150–199 = 38, ≥ 200 = 46 · <strong>PAS</strong> &lt; 80 = 58, 80–99 = 53, 100–119 = 43, 120–139 = 34, 140–159 = 24, 160–199 = 10, ≥ 200 = 0 · <strong>creatinina</strong> (mg/dL) &lt; 0,4 = 1, 0,4–0,79 = 4, 0,8–1,19 = 7, 1,2–1,59 = 10, 1,6–1,99 = 13, 2–3,99 = 21, ≥ 4 = 28 · <strong>Killip</strong> I = 0, II = 20, III = 39, IV = 59 · parada cardíaca = 39 · desvio de ST = 28 · marcadores elevados = 14.</p><p>A probabilidade de óbito é lida no nomograma (interpolada entre os pontos tabelados).</p>",
+    "table": [
+      [
+        "Pontos (SCA sem supra de ST)",
+        "Risco",
+        "Mortalidade hospitalar"
+      ],
+      [
+        "≤ 108",
+        "Baixo",
+        "&lt; 1%"
+      ],
+      [
+        "109–140",
+        "Intermediário",
+        "1–3%"
+      ],
+      [
+        "&gt; 140",
+        "Alto",
+        "&gt; 3%"
+      ]
+    ],
+    "table_note": "Nomograma: 60 pontos ≈ 0,2%; 100 ≈ 0,8%; 140 ≈ 2,9%; 160 ≈ 5,4%; 180 ≈ 9,8%; 200 ≈ 18%; 220 ≈ 29%; 250 ≈ 52%.",
+    "tips": [
+      "Na SCA sem supra de ST, GRACE &gt; 140 é critério de alto risco pela ESC 2023: estratégia invasiva nas primeiras 24 horas.",
+      "Instabilidade hemodinâmica, choque, arritmia grave, dor refratária ou complicação mecânica indicam cateterismo imediato (&lt; 2 h), independentemente do escore.",
+      "Use a creatinina e os sinais vitais da admissão, não os valores após o tratamento inicial.",
+      "O GRACE 2.0 (versão online) estima também mortalidade em 6 meses, 1 e 3 anos; esta ferramenta usa o nomograma original de mortalidade hospitalar."
+    ],
+    "sources": [
+      [
+        "Granger CB et al. Predictors of hospital mortality in the Global Registry of Acute Coronary Events. Arch Intern Med, 2003.",
+        "https://doi.org/10.1001/archinte.163.19.2345"
+      ],
+      [
+        "Byrne RA et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J, 2023.",
+        "https://doi.org/10.1093/eurheartj/ehad191"
+      ]
+    ],
+    "cases": [
+      [
+        "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        {
+          "idade": 55,
+          "fc": 80,
+          "pas": 130,
+          "cr": 1,
+          "killip": "1",
+          "enz": true
+        },
+        {
+          "score": 105,
+          "level": "low"
+        }
+      ],
+      [
+        "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        {
+          "idade": 65,
+          "fc": 72,
+          "pas": 145,
+          "cr": 0.9,
+          "killip": "1",
+          "st": true,
+          "enz": true
+        },
+        {
+          "score": 140,
+          "level": "mid",
+          "raw": {
+            "prob": 2.9
+          }
+        }
+      ],
+      [
+        "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        {
+          "idade": 72,
+          "fc": 95,
+          "pas": 125,
+          "cr": 1.3,
+          "killip": "2",
+          "st": true,
+          "enz": true
+        },
+        {
+          "score": 196,
+          "level": "high",
+          "raw": {
+            "prob": 16
+          }
+        }
+      ],
+      [
+        "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        {
+          "idade": 85,
+          "fc": 120,
+          "pas": 85,
+          "cr": 2.5,
+          "killip": "4",
+          "pcr": true,
+          "st": true,
+          "enz": true
+        },
+        {
+          "score": 329,
+          "level": "high",
+          "raw": {
+            "prob": 52
+          }
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}
