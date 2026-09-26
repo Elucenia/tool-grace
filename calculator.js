@@ -1,11 +1,11 @@
-/* tool-grace · Elucenia · https://github.com/Elucenia/tool-grace
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-grace · ELUCENIA · https://github.com/Elucenia/tool-grace
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"grace","title":"Escore GRACE (mortalidade hospitalar)","fields":[["idade","Idade","num",{"min":18,"max":110,"unit":"anos","ph":"65"}],["fc","Frequência cardíaca","num",{"min":20,"max":250,"unit":"bpm","ph":"80"}],["pas","PA sistólica","num",{"min":40,"max":300,"unit":"mmHg","ph":"130"}],["cr","Creatinina","num",{"min":0.1,"max":20,"step":0.01,"unit":"mg/dL","ph":"1,0"}],["killip","Classe de Killip","radio",{"opts":{"1":"I","2":"II","3":"III","4":"IV"}}],["pcr","Parada cardíaca na admissão","chk",[]],["st","Desvio do segmento ST","chk",[]],["enz","Marcadores de necrose elevados (troponina/CK-MB)","chk",[]]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
