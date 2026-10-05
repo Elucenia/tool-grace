@@ -1,5 +1,5 @@
 {
-  "schema": "elucenia-native190-current-source-candidate-r1",
+  "schema": "elucenia-native-current-package-R6-HTTP-linked-r5",
   "id": "grace",
   "repository": "Elucenia/tool-grace",
   "remoteBase": {
@@ -180,7 +180,24 @@
   "sourceNodeParityPassed": true,
   "browserVmParityPassed": true,
   "actualBrowserDomVerified": false,
-  "currentActualR6HttpEvidence": "pending",
+  "currentActualR6HttpEvidence": {
+    "path": "evidence/served-http-r6.json",
+    "bytes": 28757,
+    "sha256": "147576f39ca317dd930cca064ae8b5f513455eed423833d19747c7d8c18fb09f",
+    "sourceReceipt": {
+      "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+      "bytes": 7105396,
+      "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+    },
+    "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+    "sourceCalculator": {
+      "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/grace/calculator.js",
+      "sha256": "e2f5017697fa41d03e664df44bb37886eed108fd98046a4b7f371fc31f877fba",
+      "bytes": 6038
+    },
+    "cases": 4,
+    "status": "passed"
+  },
   "rights": {
     "ownCodeScope": "Current MIT adapter and original Apache standalone wrapper/support; exact original licences and notices coexist without rewriting",
     "sourceAdapter": {
@@ -298,5 +315,10 @@
   "externalPublicationReady": false,
   "publicationPerformed": false,
   "appWrites": false,
-  "deliveryWrites": false
+  "deliveryWrites": false,
+  "preparedFrom": {
+    "file": "reports/review-20261005-completion/native187-current-candidates-r2.json",
+    "bytes": 2785936,
+    "sha256": "2fe0448a9680b4a50b34235469d7cb36b3e8075ce0559d700f59442007cfb0f9"
+  }
 }

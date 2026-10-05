@@ -1,0 +1,960 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "grace",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/grace/calculator.js",
+    "sha256": "e2f5017697fa41d03e664df44bb37886eed108fd98046a4b7f371fc31f877fba",
+    "bytes": 6038
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "grace",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+      "originalInput": {
+        "idade": 55,
+        "fc": 80,
+        "pas": 130,
+        "cr": 1,
+        "killip": "1",
+        "enz": true
+      },
+      "input": {
+        "idade": 55,
+        "fc": 80,
+        "pas": 130,
+        "cr": 1,
+        "killip": "1",
+        "enz": true,
+        "pcr": false,
+        "st": false
+      },
+      "amendments": [
+        {
+          "field": "pcr",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "st",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 105,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "105",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "raw": {
+          "score": 105,
+          "prob": 0.9500000000000001
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 55,
+            "fc": 80,
+            "pas": 130,
+            "cr": 1,
+            "killip": "1",
+            "enz": true,
+            "pcr": false,
+            "st": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+          "startedAt": "2026-10-05T17:37:45.340Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "grace",
+              "main": [
+                "105",
+                "pontos"
+              ],
+              "label": "Escore GRACE (hospitalar)",
+              "raw": {
+                "score": 105,
+                "prob": 0.9500000000000001
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "ff09e7866fb37e9f0dbfb7107be88dacd7383b3d0f01586f02797031e3296519",
+          "bytes": 168,
+          "elapsedMs": 3.454299999997602
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+        "startedAt": "2026-10-05T17:37:45.340Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "grace",
+            "main": [
+              "105",
+              "pontos"
+            ],
+            "label": "Escore GRACE (hospitalar)",
+            "raw": {
+              "score": 105,
+              "prob": 0.9500000000000001
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "ff09e7866fb37e9f0dbfb7107be88dacd7383b3d0f01586f02797031e3296519",
+        "bytes": 168,
+        "elapsedMs": 3.454299999997602
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 105,
+            "obtained": 105,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 105,
+            "obtained": 105,
+            "tolerance": 1.05e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.prob",
+            "expected": 0.9500000000000001,
+            "obtained": 0.9500000000000001,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "105",
+            "obtained": "105",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "grace",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+      "originalInput": {
+        "idade": 65,
+        "fc": 72,
+        "pas": 145,
+        "cr": 0.9,
+        "killip": "1",
+        "st": true,
+        "enz": true
+      },
+      "input": {
+        "idade": 65,
+        "fc": 72,
+        "pas": 145,
+        "cr": 0.9,
+        "killip": "1",
+        "st": true,
+        "enz": true,
+        "pcr": false
+      },
+      "amendments": [
+        {
+          "field": "pcr",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 140,
+        "level": "mid",
+        "raw": {
+          "prob": 2.9
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "140",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "raw": {
+          "score": 140,
+          "prob": 2.9
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 65,
+            "fc": 72,
+            "pas": 145,
+            "cr": 0.9,
+            "killip": "1",
+            "st": true,
+            "enz": true,
+            "pcr": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+          "startedAt": "2026-10-05T17:37:45.655Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "grace",
+              "main": [
+                "140",
+                "pontos"
+              ],
+              "label": "Escore GRACE (hospitalar)",
+              "raw": {
+                "score": 140,
+                "prob": 2.9
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "366f68c5c2e62dbaa962596a753ce1c8c7b0ca9e8cb60392cd5ab3c24f6516a5",
+          "bytes": 153,
+          "elapsedMs": 3.8184000000037486
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+        "startedAt": "2026-10-05T17:37:45.655Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "grace",
+            "main": [
+              "140",
+              "pontos"
+            ],
+            "label": "Escore GRACE (hospitalar)",
+            "raw": {
+              "score": 140,
+              "prob": 2.9
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "366f68c5c2e62dbaa962596a753ce1c8c7b0ca9e8cb60392cd5ab3c24f6516a5",
+        "bytes": 153,
+        "elapsedMs": 3.8184000000037486
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.prob",
+            "expected": 2.9,
+            "obtained": 2.9,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 140,
+            "obtained": 140,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 140,
+            "obtained": 140,
+            "tolerance": 1.4e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.prob",
+            "expected": 2.9,
+            "obtained": 2.9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "140",
+            "obtained": "140",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "grace",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+      "originalInput": {
+        "idade": 72,
+        "fc": 95,
+        "pas": 125,
+        "cr": 1.3,
+        "killip": "2",
+        "st": true,
+        "enz": true
+      },
+      "input": {
+        "idade": 72,
+        "fc": 95,
+        "pas": 125,
+        "cr": 1.3,
+        "killip": "2",
+        "st": true,
+        "enz": true,
+        "pcr": false
+      },
+      "amendments": [
+        {
+          "field": "pcr",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 196,
+        "level": "high",
+        "raw": {
+          "prob": 16
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "196",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "raw": {
+          "score": 196,
+          "prob": 16
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 72,
+            "fc": 95,
+            "pas": 125,
+            "cr": 1.3,
+            "killip": "2",
+            "st": true,
+            "enz": true,
+            "pcr": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+          "startedAt": "2026-10-05T17:37:45.968Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "grace",
+              "main": [
+                "196",
+                "pontos"
+              ],
+              "label": "Escore GRACE (hospitalar)",
+              "raw": {
+                "score": 196,
+                "prob": 16
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "68ae3ceba9ee0dc586bb21c7494e444ca6c721c8f3749fd93712686df98b7f0d",
+          "bytes": 152,
+          "elapsedMs": 2.7611000000033528
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+        "startedAt": "2026-10-05T17:37:45.968Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "grace",
+            "main": [
+              "196",
+              "pontos"
+            ],
+            "label": "Escore GRACE (hospitalar)",
+            "raw": {
+              "score": 196,
+              "prob": 16
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "68ae3ceba9ee0dc586bb21c7494e444ca6c721c8f3749fd93712686df98b7f0d",
+        "bytes": 152,
+        "elapsedMs": 2.7611000000033528
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.prob",
+            "expected": 16,
+            "obtained": 16,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 196,
+            "obtained": 196,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 196,
+            "obtained": 196,
+            "tolerance": 1.96e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.prob",
+            "expected": 16,
+            "obtained": 16,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "196",
+            "obtained": "196",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "grace",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+      "originalInput": {
+        "idade": 85,
+        "fc": 120,
+        "pas": 85,
+        "cr": 2.5,
+        "killip": "4",
+        "pcr": true,
+        "st": true,
+        "enz": true
+      },
+      "input": {
+        "idade": 85,
+        "fc": 120,
+        "pas": 85,
+        "cr": 2.5,
+        "killip": "4",
+        "pcr": true,
+        "st": true,
+        "enz": true
+      },
+      "amendments": [],
+      "expected": {
+        "score": 329,
+        "level": "high",
+        "raw": {
+          "prob": 52
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "329",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "raw": {
+          "score": 329,
+          "prob": 52
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 85,
+            "fc": 120,
+            "pas": 85,
+            "cr": 2.5,
+            "killip": "4",
+            "pcr": true,
+            "st": true,
+            "enz": true
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+          "startedAt": "2026-10-05T17:37:46.280Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "grace",
+              "main": [
+                "329",
+                "pontos"
+              ],
+              "label": "Escore GRACE (hospitalar)",
+              "raw": {
+                "score": 329,
+                "prob": 52
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "60a15f5e2d97310da9a9e7172227defd996a03ef7018da6a62e560041c41ef0f",
+          "bytes": 152,
+          "elapsedMs": 2.5366999999969266
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/grace/calculate",
+        "startedAt": "2026-10-05T17:37:46.280Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "grace",
+            "main": [
+              "329",
+              "pontos"
+            ],
+            "label": "Escore GRACE (hospitalar)",
+            "raw": {
+              "score": 329,
+              "prob": 52
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "60a15f5e2d97310da9a9e7172227defd996a03ef7018da6a62e560041c41ef0f",
+        "bytes": 152,
+        "elapsedMs": 2.5366999999969266
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.prob",
+            "expected": 52,
+            "obtained": 52,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 329,
+            "obtained": 329,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 329,
+            "obtained": 329,
+            "tolerance": 3.29e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.prob",
+            "expected": 52,
+            "obtained": 52,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "329",
+            "obtained": "329",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
