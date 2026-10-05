@@ -1,0 +1,861 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field idade",
+    "input": {
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field idade",
+    "input": {
+      "idade": "",
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" idade",
+    "input": {
+      "idade": "NaN",
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" idade",
+    "input": {
+      "idade": "Infinity",
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" idade",
+    "input": {
+      "idade": "1e309",
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" idade",
+    "input": {
+      "idade": "invalid",
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} idade",
+    "input": {
+      "idade": {},
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true idade",
+    "input": {
+      "idade": true,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum idade",
+    "input": {
+      "idade": 16.2,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum idade",
+    "input": {
+      "idade": 121,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fc",
+    "input": {
+      "idade": 55,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fc",
+    "input": {
+      "idade": 55,
+      "fc": "",
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" fc",
+    "input": {
+      "idade": 55,
+      "fc": "NaN",
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" fc",
+    "input": {
+      "idade": 55,
+      "fc": "Infinity",
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" fc",
+    "input": {
+      "idade": 55,
+      "fc": "1e309",
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" fc",
+    "input": {
+      "idade": 55,
+      "fc": "invalid",
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} fc",
+    "input": {
+      "idade": 55,
+      "fc": {},
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true fc",
+    "input": {
+      "idade": 55,
+      "fc": true,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum fc",
+    "input": {
+      "idade": 55,
+      "fc": 18,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum fc",
+    "input": {
+      "idade": 55,
+      "fc": 275,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": "",
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": "NaN",
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": "Infinity",
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": "1e309",
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": "invalid",
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": {},
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": true,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 36,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum pas",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 330,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "pas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": "",
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": "NaN",
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": "Infinity",
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": "1e309",
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": "invalid",
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": {},
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": true,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": -0.9,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum cr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": 22,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field killip",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "killip"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field killip",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "killip"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option killip",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "__ELUCENIA_INVALID_OPTION__",
+      "enz": true,
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "killip"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean pcr",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": "2",
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pcr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean st",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": true,
+      "pcr": false,
+      "st": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "st"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean enz",
+    "input": {
+      "idade": 55,
+      "fc": 80,
+      "pas": 130,
+      "cr": 1,
+      "killip": "1",
+      "enz": "2",
+      "pcr": false,
+      "st": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "enz"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

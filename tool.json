@@ -5,6 +5,7 @@
     "short": "Risco de morte na síndrome coronariana aguda",
     "desc": "Calcule o escore GRACE da síndrome coronariana aguda: pontos do nomograma de Granger, probabilidade de óbito hospitalar e risco para estratégia invasiva.",
     "lead": "Estima o risco de morte durante a internação em todo o espectro da síndrome coronariana aguda, com 8 variáveis da admissão; na SCA sem supra de ST, orienta o momento da estratégia invasiva.",
+    "kind": "Calculadora",
     "spec": [
       "cardiologia",
       "medicina-de-emergencia",
@@ -73,51 +74,22 @@
         "pcr",
         "Parada cardíaca na admissão",
         "chk",
-        []
+        {}
       ],
       [
         "st",
         "Desvio do segmento ST",
         "chk",
-        []
+        {}
       ],
       [
         "enz",
         "Marcadores de necrose elevados (troponina/CK-MB)",
         "chk",
-        []
+        {}
       ]
     ],
     "formula": "<p>Pontos do nomograma (Granger 2003): <strong>idade</strong> &lt; 30 = 0, 30–39 = 8, 40–49 = 25, 50–59 = 41, 60–69 = 58, 70–79 = 75, 80–89 = 91, ≥ 90 = 100 · <strong>FC</strong> &lt; 50 = 0, 50–69 = 3, 70–89 = 9, 90–109 = 15, 110–149 = 24, 150–199 = 38, ≥ 200 = 46 · <strong>PAS</strong> &lt; 80 = 58, 80–99 = 53, 100–119 = 43, 120–139 = 34, 140–159 = 24, 160–199 = 10, ≥ 200 = 0 · <strong>creatinina</strong> (mg/dL) &lt; 0,4 = 1, 0,4–0,79 = 4, 0,8–1,19 = 7, 1,2–1,59 = 10, 1,6–1,99 = 13, 2–3,99 = 21, ≥ 4 = 28 · <strong>Killip</strong> I = 0, II = 20, III = 39, IV = 59 · parada cardíaca = 39 · desvio de ST = 28 · marcadores elevados = 14.</p><p>A probabilidade de óbito é lida no nomograma (interpolada entre os pontos tabelados).</p>",
-    "table": [
-      [
-        "Pontos (SCA sem supra de ST)",
-        "Risco",
-        "Mortalidade hospitalar"
-      ],
-      [
-        "≤ 108",
-        "Baixo",
-        "&lt; 1%"
-      ],
-      [
-        "109–140",
-        "Intermediário",
-        "1–3%"
-      ],
-      [
-        "&gt; 140",
-        "Alto",
-        "&gt; 3%"
-      ]
-    ],
-    "table_note": "Nomograma: 60 pontos ≈ 0,2%; 100 ≈ 0,8%; 140 ≈ 2,9%; 160 ≈ 5,4%; 180 ≈ 9,8%; 200 ≈ 18%; 220 ≈ 29%; 250 ≈ 52%.",
-    "tips": [
-      "Na SCA sem supra de ST, GRACE &gt; 140 é critério de alto risco pela ESC 2023: estratégia invasiva nas primeiras 24 horas.",
-      "Instabilidade hemodinâmica, choque, arritmia grave, dor refratária ou complicação mecânica indicam cateterismo imediato (&lt; 2 h), independentemente do escore.",
-      "Use a creatinina e os sinais vitais da admissão, não os valores após o tratamento inicial.",
-      "O GRACE 2.0 (versão online) estima também mortalidade em 6 meses, 1 e 3 anos; esta ferramenta usa o nomograma original de mortalidade hospitalar."
-    ],
     "sources": [
       [
         "Granger CB et al. Predictors of hospital mortality in the Global Registry of Acute Coronary Events. Arch Intern Med, 2003.",
@@ -203,9 +175,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -214,17 +183,276 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:47:03.432Z",
+      "total": 392,
+      "passed": 392,
+      "sourceRowCount": 392,
+      "uniqueApiInputCount": 392,
+      "scope": "Assigned Killip/flags + original discrete bin points at unambiguous within-bin inputs. No conformance claim for local interpolation, mortality interpolation, GRACE2, diagnosis or treatment.",
+      "caseStorage": {
+        "file": "independent-source-cases.json",
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "sha256": "7062eb964a4e8b24112092c199eacd8f6124d1d58dfcd52a9a496766a0f09358",
+        "total": 392,
+        "uniqueApiInputCount": 392,
+        "bankRowCount": 392
+      },
+      "sourceExpectation": {
+        "file": "reports/review-20261003/source33-accepted-scope-expectations.json",
+        "sha256": "c51a745f432eef23771c7e52dea4c8b82f501ce54d3bfe640e449e04883bc907"
+      },
+      "originalEvidence": {
+        "file": "reports/review-20261003/six-primary-own-source-check-final33.json",
+        "sha256": "f41286e6919665d7480d19067e0fa325292e1753677e419375b69a9739843521"
+      },
+      "sourceRead": {
+        "file": "reports/review-20261003/six-primary-own-observations-final33.json",
+        "sha256": "f4047a76d52e04932e39b336d9a395c949640cb519103160ebe5241fd4ad67a1"
+      },
+      "independentPeer": {
+        "status": "completed",
+        "kind": "independent-technical-packaging-and-replay",
+        "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+        "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e",
+        "checks": 568121,
+        "scope": "Root independent technical packaging/projection peer, against the source author pre-engine expectations. Not a second blind primary-source derivation or clinical/professional-language/rights approval. Exact source33 exclusions retained; no tolerance relaxation.",
+        "secondBlindPrimarySourceDerivation": false,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed"
+      },
+      "numericPolicy": {
+        "acceptedProjection": "Strict independently frozen accepted integer/count/class projection; no float tolerance"
+      },
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "GRACE/Granger 2003:nomograma hospitalar, interpolação local; sem GRACE 2.0",
+    "implementationVersion": "grace@native-2026-10-03+e2f5017697fa",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/14581255/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Pontos do nomograma (Granger 2003): idade < 30 = 0, 30–39 = 8, 40–49 = 25, 50–59 = 41, 60–69 = 58, 70–79 = 75, 80–89 = 91, ≥ 90 = 100 · FC < 50 = 0, 50–69 = 3, 70–89 = 9, 90–109 = 15, 110–149 = 24, 150–199 = 38, ≥ 200 = 46 · PAS < 80 = 58, 80–99 = 53, 100–119 = 43, 120–139 = 34, 140–159 = 24, 160–199 = 10, ≥ 200 = 0 · creatinina (mg/dL) < 0,4 = 1, 0,4–0,79 = 4, 0,8–1,19 = 7, 1,2–1,59 = 10, 1,6–1,99 = 13, 2–3,99 = 21, ≥ 4 = 28 · Killip I = 0, II = 20, III = 39, IV = 59 · parada cardíaca = 39 · desvio de ST = 28 · marcadores elevados = 14. A probabilidade de óbito é lida no nomograma (interpolada entre os pontos tabelados).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "num",
+            "min": 18,
+            "max": 110,
+            "unit": "anos",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fc",
+            "label": "Frequência cardíaca",
+            "type": "num",
+            "min": 20,
+            "max": 250,
+            "unit": "bpm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pas",
+            "label": "PA sistólica",
+            "type": "num",
+            "min": 40,
+            "max": 300,
+            "unit": "mmHg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cr",
+            "label": "Creatinina",
+            "type": "num",
+            "min": 0.1,
+            "max": 20,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "killip",
+            "label": "Classe de Killip",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "I",
+              "2": "II",
+              "3": "III",
+              "4": "IV"
+            }
+          },
+          {
+            "key": "pcr",
+            "label": "Parada cardíaca na admissão",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "st",
+            "label": "Desvio do segmento ST",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "enz",
+            "label": "Marcadores de necrose elevados (troponina/CK-MB)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "5fd4590b75aedddeef99854febb8afa577ed549ff9a857e3910249ddf26581a9"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Granger CB et al. Predictors of hospital mortality in the Global Registry of Acute Coronary Events. Arch Intern Med, 2003.",
+          "url": "https://doi.org/10.1001/archinte.163.19.2345",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Predictors of hospital mortality in the global registry of acute coronary events.",
+            "year": "2003",
+            "firstPublicationDate": "2003-10-01",
+            "doi": "10.1001/archinte.163.19.2345",
+            "pmid": "14581255",
+            "journal": "Archives of internal medicine",
+            "authors": "Granger CB, Goldberg RJ, Dabbous O, Pieper KS, Eagle KA, Cannon CP, Van De Werf F, Avezum A, Goodman SG, Flather MD, Fox KA, Global Registry of Acute Coronary Events Investigators."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/14581255/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "76d7dc1e456622080ede9acd1524ca3b0f004a234e79a1693d315c7013cad5ba",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Byrne RA et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J, 2023.",
+          "url": "https://doi.org/10.1093/eurheartj/ehad191",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2023 ESC Guidelines for the management of acute coronary syndromes.",
+            "year": "2023",
+            "firstPublicationDate": "2023-10-01",
+            "doi": "10.1093/eurheartj/ehad191",
+            "pmid": "37622654",
+            "journal": "European heart journal",
+            "authors": "Byrne RA, Rossello X, Coughlan JJ, Barbato E, Berry C, Chieffo A, Claeys MJ, Dan GA, Dweck MR, Galbraith M, Gilard M, Hinterbuchner L, Jankowska EA, Jüni P, Kimura T, Kunadian V, Leosdottir M, Lorusso R, Pedretti RFE, Rigopoulos AG, Rubini Gimenez M, Thiele H, Vranckx P, Wassmann S, Wenger NK, Ibanez B, ESC Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/37622654/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:47:03.432Z",
+        "total": 392,
+        "passed": 392,
+        "sourceRowCount": 392,
+        "uniqueApiInputCount": 392,
+        "scope": "Assigned Killip/flags + original discrete bin points at unambiguous within-bin inputs. No conformance claim for local interpolation, mortality interpolation, GRACE2, diagnosis or treatment.",
+        "caseStorage": {
+          "file": "independent-source-cases.json",
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "sha256": "7062eb964a4e8b24112092c199eacd8f6124d1d58dfcd52a9a496766a0f09358",
+          "total": 392,
+          "uniqueApiInputCount": 392,
+          "bankRowCount": 392
+        },
+        "sourceExpectation": {
+          "file": "reports/review-20261003/source33-accepted-scope-expectations.json",
+          "sha256": "c51a745f432eef23771c7e52dea4c8b82f501ce54d3bfe640e449e04883bc907"
+        },
+        "originalEvidence": {
+          "file": "reports/review-20261003/six-primary-own-source-check-final33.json",
+          "sha256": "f41286e6919665d7480d19067e0fa325292e1753677e419375b69a9739843521"
+        },
+        "sourceRead": {
+          "file": "reports/review-20261003/six-primary-own-observations-final33.json",
+          "sha256": "f4047a76d52e04932e39b336d9a395c949640cb519103160ebe5241fd4ad67a1"
+        },
+        "independentPeer": {
+          "status": "completed",
+          "kind": "independent-technical-packaging-and-replay",
+          "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+          "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e",
+          "checks": 568121,
+          "scope": "Root independent technical packaging/projection peer, against the source author pre-engine expectations. Not a second blind primary-source derivation or clinical/professional-language/rights approval. Exact source33 exclusions retained; no tolerance relaxation.",
+          "secondBlindPrimarySourceDerivation": false,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed"
+        },
+        "numericPolicy": {
+          "acceptedProjection": "Strict independently frozen accepted integer/count/class projection; no float tolerance"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "e2f5017697fa41d03e664df44bb37886eed108fd98046a4b7f371fc31f877fba"
+    },
+    "limits": "O GRACE de 2003 estima morte durante a internação no espectro da síndrome coronariana aguda. A versão nomográfica original e a interpolação local não são o modelo GRACE 2.0. Decisões sobre estratégia invasiva, outros horizontes temporais ou taxas de risco exigem a diretriz e a edição correspondentes.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.932Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não mostra pontos nomográficos/interpolação local, algoritmo atual de estratégia invasiva ou modelo GRACE 2.0."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/grace/calculator.js",
+    "bytes": 6038,
+    "sha256": "e2f5017697fa41d03e664df44bb37886eed108fd98046a4b7f371fc31f877fba"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "ee85e298028d05c1c070030253a2d59b692472702794903273bd7d21e794ec42",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 3,
+      "sha256": "d4a06a9bf409d22865ccb4cc9d6dc079b0eda0f94ed6f689896065572ee3ae46",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 3,
+      "sha256": "d4a06a9bf409d22865ccb4cc9d6dc079b0eda0f94ed6f689896065572ee3ae46",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
