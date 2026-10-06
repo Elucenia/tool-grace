@@ -100,3 +100,55 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Baixo risco (≤ 108): mortalidade hospitalar < 1%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Probabilidade de óbito hospitalar (nomograma) | ≈ 1,0% |
+| Conduta na SCA sem supra de ST (ESC 2023) | Estratégia invasiva na internação, conforme demais critérios |
+
+As faixas de risco (≤ 108, 109 a 140, > 140) foram definidas para SCA sem supradesnivelamento de ST.
+
+
+### 2
+
+Risco intermediário (109 a 140): mortalidade hospitalar de 1 a 3%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Probabilidade de óbito hospitalar (nomograma) | ≈ 2,9% |
+| Conduta na SCA sem supra de ST (ESC 2023) | Estratégia invasiva na internação, conforme demais critérios |
+
+As faixas de risco (≤ 108, 109 a 140, > 140) foram definidas para SCA sem supradesnivelamento de ST.
+
+
+### 3
+
+Alto risco (> 140): mortalidade hospitalar > 3%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Probabilidade de óbito hospitalar (nomograma) | ≈ 16,0% |
+| Conduta na SCA sem supra de ST (ESC 2023) | Estratégia invasiva precoce (< 24 h) |
+
+As faixas de risco (≤ 108, 109 a 140, > 140) foram definidas para SCA sem supradesnivelamento de ST.
+
+
+### 4
+
+Alto risco (> 140): mortalidade hospitalar > 3%
+
+| Detalhes do resultado | |
+| --- | --- |
+| Probabilidade de óbito hospitalar (nomograma) | ≥ 52% |
+| Conduta na SCA sem supra de ST (ESC 2023) | Estratégia invasiva precoce (< 24 h) |
+
+As faixas de risco (≤ 108, 109 a 140, > 140) foram definidas para SCA sem supradesnivelamento de ST.
+

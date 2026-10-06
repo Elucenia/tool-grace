@@ -100,3 +100,55 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Niedriges Risiko (≤ 108): Krankenhausmortalität < 1%
+
+| Ergebnisdetails | |
+| --- | --- |
+| Wahrscheinlichkeit des Krankenhaussterbens (Nomogramm) | ≈ 1,0% |
+| Vorgehen beim ACS ohne ST-Hebung (ESC 2023) | Invasive Strategie während des Krankenhausaufenthalts, gemäß den übrigen Kriterien |
+
+Die Risikobereiche (≤ 108, 109 bis 140, > 140) wurden für ACS ohne ST-Streckenhebung definiert.
+
+
+### 2
+
+Intermediäres Risiko (109 bis 140): Krankenhausmortalität von 1 bis 3%
+
+| Ergebnisdetails | |
+| --- | --- |
+| Wahrscheinlichkeit des Krankenhaussterbens (Nomogramm) | ≈ 2,9% |
+| Vorgehen beim ACS ohne ST-Hebung (ESC 2023) | Invasive Strategie während des Krankenhausaufenthalts, gemäß den übrigen Kriterien |
+
+Die Risikobereiche (≤ 108, 109 bis 140, > 140) wurden für ACS ohne ST-Streckenhebung definiert.
+
+
+### 3
+
+Hohes Risiko (> 140): Krankenhausmortalität > 3%
+
+| Ergebnisdetails | |
+| --- | --- |
+| Wahrscheinlichkeit des Krankenhaussterbens (Nomogramm) | ≈ 16,0% |
+| Vorgehen beim ACS ohne ST-Hebung (ESC 2023) | Frühe invasive Strategie (< 24 h) |
+
+Die Risikobereiche (≤ 108, 109 bis 140, > 140) wurden für ACS ohne ST-Streckenhebung definiert.
+
+
+### 4
+
+Hohes Risiko (> 140): Krankenhausmortalität > 3%
+
+| Ergebnisdetails | |
+| --- | --- |
+| Wahrscheinlichkeit des Krankenhaussterbens (Nomogramm) | ≥ 52% |
+| Vorgehen beim ACS ohne ST-Hebung (ESC 2023) | Frühe invasive Strategie (< 24 h) |
+
+Die Risikobereiche (≤ 108, 109 bis 140, > 140) wurden für ACS ohne ST-Streckenhebung definiert.
+

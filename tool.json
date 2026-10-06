@@ -232,7 +232,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "GRACE/Granger 2003:nomograma hospitalar, interpolação local; sem GRACE 2.0",
-    "implementationVersion": "grace@native-2026-10-03+e2f5017697fa",
+    "implementationVersion": "grace@native-2026-10-05+a6c377609dab",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/14581255/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -417,7 +417,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "e2f5017697fa41d03e664df44bb37886eed108fd98046a4b7f371fc31f877fba"
+      "implementationHash": "a6c377609dab9aad441116f1f9223127bc1c09b5bb6b59dacc0603086e7e63d2",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "grace@native-2026-10-03+e2f5017697fa",
+          "previousImplementationHash": "e2f5017697fa41d03e664df44bb37886eed108fd98046a4b7f371fc31f877fba",
+          "implementationHash": "a6c377609dab9aad441116f1f9223127bc1c09b5bb6b59dacc0603086e7e63d2",
+          "scientificBodySha256": "48af234207f945c02675b6c3c2e2404983b6685019e69074b2d3b0155d326cb8",
+          "metadataContractHash": "5fd4590b75aedddeef99854febb8afa577ed549ff9a857e3910249ddf26581a9",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O GRACE de 2003 estima morte durante a internação no espectro da síndrome coronariana aguda. A versão nomográfica original e a interpolação local não são o modelo GRACE 2.0. Decisões sobre estratégia invasiva, outros horizontes temporais ou taxas de risco exigem a diretriz e a edição correspondentes.",
     "sourceLimitEvidence": {
@@ -436,20 +464,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/grace/calculator.js",
-    "bytes": 6038,
-    "sha256": "e2f5017697fa41d03e664df44bb37886eed108fd98046a4b7f371fc31f877fba"
+    "bytes": 6243,
+    "sha256": "a6c377609dab9aad441116f1f9223127bc1c09b5bb6b59dacc0603086e7e63d2"
   },
-  "sourceToolSha256": "ee85e298028d05c1c070030253a2d59b692472702794903273bd7d21e794ec42",
+  "sourceToolSha256": "8d16dd7a442c4a7f936b272f5950c1c9fe8fae316faae74211af37c727f89e94",
   "omittedFullReferenceBanks": [
     {
       "rows": 3,
       "sha256": "d4a06a9bf409d22865ccb4cc9d6dc079b0eda0f94ed6f689896065572ee3ae46",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 3,
       "sha256": "d4a06a9bf409d22865ccb4cc9d6dc079b0eda0f94ed6f689896065572ee3ae46",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

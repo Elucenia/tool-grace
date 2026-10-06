@@ -1,0 +1,1895 @@
+{
+  "id": "grace",
+  "implementationVersion": "grace@native-2026-10-05+a6c377609dab",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilidade de óbito hospitalar (nomograma)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "≈ 1,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduta na SCA sem supra de ST (ESC 2023)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Estratégia invasiva na internação, conforme demais critérios",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Baixo risco (≤ 108): mortalidade hospitalar < 1%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "As faixas de risco (≤ 108, 109 a 140, > 140) foram definidas para SCA sem supradesnivelamento de ST.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilidade de óbito hospitalar (nomograma)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "≈ 2,9%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduta na SCA sem supra de ST (ESC 2023)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Estratégia invasiva na internação, conforme demais critérios",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco intermediário (109 a 140): mortalidade hospitalar de 1 a 3%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "As faixas de risco (≤ 108, 109 a 140, > 140) foram definidas para SCA sem supradesnivelamento de ST.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilidade de óbito hospitalar (nomograma)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "≈ 16,0%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduta na SCA sem supra de ST (ESC 2023)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Estratégia invasiva precoce (< 24 h)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto risco (> 140): mortalidade hospitalar > 3%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "As faixas de risco (≤ 108, 109 a 140, > 140) foram definidas para SCA sem supradesnivelamento de ST.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilidade de óbito hospitalar (nomograma)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "≥ 52%",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conduta na SCA sem supra de ST (ESC 2023)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Estratégia invasiva precoce (< 24 h)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto risco (> 140): mortalidade hospitalar > 3%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "As faixas de risco (≤ 108, 109 a 140, > 140) foram definidas para SCA sem supradesnivelamento de ST.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probability of in-hospital death (nomogram)",
+                "locale": "en",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 1.0%",
+                "locale": "en",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ACS without ST-segment elevation management (ESC 2023)",
+                "locale": "en",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Invasive strategy during hospitalization, according to the other criteria",
+                "locale": "en",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low risk (≤ 108): hospital mortality < 1%",
+            "locale": "en",
+            "template": "documented-authored-1e456cb53deb978f7f57"
+          },
+          "note": {
+            "text": "The risk ranges (≤ 108, 109 to 140, > 140) were defined for ACS without ST-segment elevation.",
+            "locale": "en",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probability of in-hospital death (nomogram)",
+                "locale": "en",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 2.9%",
+                "locale": "en",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  2.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ACS without ST-segment elevation management (ESC 2023)",
+                "locale": "en",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Invasive strategy during hospitalization, according to the other criteria",
+                "locale": "en",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intermediate risk (109 to 140): hospital mortality of 1 to 3%",
+            "locale": "en",
+            "template": "documented-authored-7c682c544ab07ce952f1"
+          },
+          "note": {
+            "text": "The risk ranges (≤ 108, 109 to 140, > 140) were defined for ACS without ST-segment elevation.",
+            "locale": "en",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probability of in-hospital death (nomogram)",
+                "locale": "en",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 16.0%",
+                "locale": "en",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  16
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ACS without ST-segment elevation management (ESC 2023)",
+                "locale": "en",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Early invasive strategy (< 24 h)",
+                "locale": "en",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "High risk (> 140): hospital mortality > 3%",
+            "locale": "en",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "The risk ranges (≤ 108, 109 to 140, > 140) were defined for ACS without ST-segment elevation.",
+            "locale": "en",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probability of in-hospital death (nomogram)",
+                "locale": "en",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≥ 52%",
+                "locale": "en",
+                "template": "documented-authored-1fe331eaeaf93c71c3ae",
+                "sourceNumbers": [
+                  52
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ACS without ST-segment elevation management (ESC 2023)",
+                "locale": "en",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Early invasive strategy (< 24 h)",
+                "locale": "en",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "High risk (> 140): hospital mortality > 3%",
+            "locale": "en",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "The risk ranges (≤ 108, 109 to 140, > 140) were defined for ACS without ST-segment elevation.",
+            "locale": "en",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilidad de muerte intrahospitalaria (nomograma)",
+                "locale": "es",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 1,0%",
+                "locale": "es",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conducta en el SCA sin elevación del ST (ESC 2023)",
+                "locale": "es",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Estrategia invasiva durante la hospitalización, según los demás criterios",
+                "locale": "es",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Bajo riesgo (≤ 108): mortalidad hospitalaria < 1%",
+            "locale": "es",
+            "template": "documented-authored-1e456cb53deb978f7f57"
+          },
+          "note": {
+            "text": "Los rangos de riesgo (≤ 108, 109 a 140, > 140) se definieron para SCA sin elevación del segmento ST.",
+            "locale": "es",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilidad de muerte intrahospitalaria (nomograma)",
+                "locale": "es",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 2,9%",
+                "locale": "es",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  2.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conducta en el SCA sin elevación del ST (ESC 2023)",
+                "locale": "es",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Estrategia invasiva durante la hospitalización, según los demás criterios",
+                "locale": "es",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo intermedio (109 a 140): mortalidad hospitalaria del 1 al 3%",
+            "locale": "es",
+            "template": "documented-authored-7c682c544ab07ce952f1"
+          },
+          "note": {
+            "text": "Los rangos de riesgo (≤ 108, 109 a 140, > 140) se definieron para SCA sin elevación del segmento ST.",
+            "locale": "es",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilidad de muerte intrahospitalaria (nomograma)",
+                "locale": "es",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 16,0%",
+                "locale": "es",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  16
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conducta en el SCA sin elevación del ST (ESC 2023)",
+                "locale": "es",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Estrategia invasiva precoz (< 24 h)",
+                "locale": "es",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto riesgo (> 140): mortalidad hospitalaria > 3%",
+            "locale": "es",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "Los rangos de riesgo (≤ 108, 109 a 140, > 140) se definieron para SCA sin elevación del segmento ST.",
+            "locale": "es",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilidad de muerte intrahospitalaria (nomograma)",
+                "locale": "es",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≥ 52%",
+                "locale": "es",
+                "template": "documented-authored-1fe331eaeaf93c71c3ae",
+                "sourceNumbers": [
+                  52
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Conducta en el SCA sin elevación del ST (ESC 2023)",
+                "locale": "es",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Estrategia invasiva precoz (< 24 h)",
+                "locale": "es",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto riesgo (> 140): mortalidad hospitalaria > 3%",
+            "locale": "es",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "Los rangos de riesgo (≤ 108, 109 a 140, > 140) se definieron para SCA sin elevación del segmento ST.",
+            "locale": "es",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilité de décès hospitalier (nomogramme)",
+                "locale": "fr",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 1,0%",
+                "locale": "fr",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Prise en charge du SCA sans sus-décalage du segment ST (ESC 2023)",
+                "locale": "fr",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Stratégie invasive pendant l'hospitalisation, selon les autres critères",
+                "locale": "fr",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque faible (≤ 108) : mortalité hospitalière < 1%",
+            "locale": "fr",
+            "template": "documented-authored-1e456cb53deb978f7f57"
+          },
+          "note": {
+            "text": "Les plages de risque (≤ 108, 109 à 140, > 140) ont été définies pour le SCA sans élévation du segment ST.",
+            "locale": "fr",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilité de décès hospitalier (nomogramme)",
+                "locale": "fr",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 2,9%",
+                "locale": "fr",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  2.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Prise en charge du SCA sans sus-décalage du segment ST (ESC 2023)",
+                "locale": "fr",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Stratégie invasive pendant l'hospitalisation, selon les autres critères",
+                "locale": "fr",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque intermédiaire (109 à 140) : mortalité hospitalière de 1 à 3%",
+            "locale": "fr",
+            "template": "documented-authored-7c682c544ab07ce952f1"
+          },
+          "note": {
+            "text": "Les plages de risque (≤ 108, 109 à 140, > 140) ont été définies pour le SCA sans élévation du segment ST.",
+            "locale": "fr",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilité de décès hospitalier (nomogramme)",
+                "locale": "fr",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 16,0%",
+                "locale": "fr",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  16
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Prise en charge du SCA sans sus-décalage du segment ST (ESC 2023)",
+                "locale": "fr",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Stratégie invasive précoce (< 24 h)",
+                "locale": "fr",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque élevé (> 140) : mortalité hospitalière > 3%",
+            "locale": "fr",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "Les plages de risque (≤ 108, 109 à 140, > 140) ont été définies pour le SCA sans élévation du segment ST.",
+            "locale": "fr",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilité de décès hospitalier (nomogramme)",
+                "locale": "fr",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≥ 52%",
+                "locale": "fr",
+                "template": "documented-authored-1fe331eaeaf93c71c3ae",
+                "sourceNumbers": [
+                  52
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Prise en charge du SCA sans sus-décalage du segment ST (ESC 2023)",
+                "locale": "fr",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Stratégie invasive précoce (< 24 h)",
+                "locale": "fr",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque élevé (> 140) : mortalité hospitalière > 3%",
+            "locale": "fr",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "Les plages de risque (≤ 108, 109 à 140, > 140) ont été définies pour le SCA sans élévation du segment ST.",
+            "locale": "fr",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Wahrscheinlichkeit des Krankenhaussterbens (Nomogramm)",
+                "locale": "de",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 1,0%",
+                "locale": "de",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vorgehen beim ACS ohne ST-Hebung (ESC 2023)",
+                "locale": "de",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Invasive Strategie während des Krankenhausaufenthalts, gemäß den übrigen Kriterien",
+                "locale": "de",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges Risiko (≤ 108): Krankenhausmortalität < 1%",
+            "locale": "de",
+            "template": "documented-authored-1e456cb53deb978f7f57"
+          },
+          "note": {
+            "text": "Die Risikobereiche (≤ 108, 109 bis 140, > 140) wurden für ACS ohne ST-Streckenhebung definiert.",
+            "locale": "de",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Wahrscheinlichkeit des Krankenhaussterbens (Nomogramm)",
+                "locale": "de",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 2,9%",
+                "locale": "de",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  2.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vorgehen beim ACS ohne ST-Hebung (ESC 2023)",
+                "locale": "de",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Invasive Strategie während des Krankenhausaufenthalts, gemäß den übrigen Kriterien",
+                "locale": "de",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intermediäres Risiko (109 bis 140): Krankenhausmortalität von 1 bis 3%",
+            "locale": "de",
+            "template": "documented-authored-7c682c544ab07ce952f1"
+          },
+          "note": {
+            "text": "Die Risikobereiche (≤ 108, 109 bis 140, > 140) wurden für ACS ohne ST-Streckenhebung definiert.",
+            "locale": "de",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Wahrscheinlichkeit des Krankenhaussterbens (Nomogramm)",
+                "locale": "de",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 16,0%",
+                "locale": "de",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  16
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vorgehen beim ACS ohne ST-Hebung (ESC 2023)",
+                "locale": "de",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Frühe invasive Strategie (< 24 h)",
+                "locale": "de",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hohes Risiko (> 140): Krankenhausmortalität > 3%",
+            "locale": "de",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "Die Risikobereiche (≤ 108, 109 bis 140, > 140) wurden für ACS ohne ST-Streckenhebung definiert.",
+            "locale": "de",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Wahrscheinlichkeit des Krankenhaussterbens (Nomogramm)",
+                "locale": "de",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≥ 52%",
+                "locale": "de",
+                "template": "documented-authored-1fe331eaeaf93c71c3ae",
+                "sourceNumbers": [
+                  52
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vorgehen beim ACS ohne ST-Hebung (ESC 2023)",
+                "locale": "de",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Frühe invasive Strategie (< 24 h)",
+                "locale": "de",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hohes Risiko (> 140): Krankenhausmortalität > 3%",
+            "locale": "de",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "Die Risikobereiche (≤ 108, 109 bis 140, > 140) wurden für ACS ohne ST-Streckenhebung definiert.",
+            "locale": "de",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilità di morte in ospedale (nomogramma)",
+                "locale": "it",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 1,0%",
+                "locale": "it",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Condotta nell'SCA senza sopraslivellamento del tratto ST (ESC 2023)",
+                "locale": "it",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Strategia invasiva durante il ricovero, secondo gli altri criteri",
+                "locale": "it",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Basso rischio (≤ 108): mortalità ospedaliera < 1%",
+            "locale": "it",
+            "template": "documented-authored-1e456cb53deb978f7f57"
+          },
+          "note": {
+            "text": "Gli intervalli di rischio (≤ 108, 109 a 140, > 140) sono stati definiti per SCA senza sopraslivellamento del tratto ST.",
+            "locale": "it",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilità di morte in ospedale (nomogramma)",
+                "locale": "it",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 2,9%",
+                "locale": "it",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  2.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Condotta nell'SCA senza sopraslivellamento del tratto ST (ESC 2023)",
+                "locale": "it",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Strategia invasiva durante il ricovero, secondo gli altri criteri",
+                "locale": "it",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio intermedio (109 a 140): mortalità ospedaliera dell'1 al 3%",
+            "locale": "it",
+            "template": "documented-authored-7c682c544ab07ce952f1"
+          },
+          "note": {
+            "text": "Gli intervalli di rischio (≤ 108, 109 a 140, > 140) sono stati definiti per SCA senza sopraslivellamento del tratto ST.",
+            "locale": "it",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilità di morte in ospedale (nomogramma)",
+                "locale": "it",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 16,0%",
+                "locale": "it",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  16
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Condotta nell'SCA senza sopraslivellamento del tratto ST (ESC 2023)",
+                "locale": "it",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Strategia invasiva precoce (< 24 h)",
+                "locale": "it",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio alto (> 140): mortalità ospedaliera > 3%",
+            "locale": "it",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "Gli intervalli di rischio (≤ 108, 109 a 140, > 140) sono stati definiti per SCA senza sopraslivellamento del tratto ST.",
+            "locale": "it",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Probabilità di morte in ospedale (nomogramma)",
+                "locale": "it",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≥ 52%",
+                "locale": "it",
+                "template": "documented-authored-1fe331eaeaf93c71c3ae",
+                "sourceNumbers": [
+                  52
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Condotta nell'SCA senza sopraslivellamento del tratto ST (ESC 2023)",
+                "locale": "it",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "Strategia invasiva precoce (< 24 h)",
+                "locale": "it",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio alto (> 140): mortalità ospedaliera > 3%",
+            "locale": "it",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "Gli intervalli di rischio (≤ 108, 109 a 140, > 140) sono stati definiti per SCA senza sopraslivellamento del tratto ST.",
+            "locale": "it",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "احتمال الوفاة داخل المستشفى (مخطط اسمي)",
+                "locale": "ar",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ ١٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التدبير في المتلازمة التاجية الحادة دون ارتفاع مقطع ST (ESC 2023)",
+                "locale": "ar",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "استراتيجية تداخلية أثناء التنويم، وفقًا لبقية المعايير",
+                "locale": "ar",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطورة منخفضة (≤ 108): وفيات داخل المستشفى < 1%",
+            "locale": "ar",
+            "template": "documented-authored-1e456cb53deb978f7f57"
+          },
+          "note": {
+            "text": "تم تحديد فئات الخطورة (≤ 108، 109 إلى 140، > 140) لـ ACS دون ارتفاع مقطع ST.",
+            "locale": "ar",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "احتمال الوفاة داخل المستشفى (مخطط اسمي)",
+                "locale": "ar",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ ٢٫٩%",
+                "locale": "ar",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  2.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التدبير في المتلازمة التاجية الحادة دون ارتفاع مقطع ST (ESC 2023)",
+                "locale": "ar",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "استراتيجية تداخلية أثناء التنويم، وفقًا لبقية المعايير",
+                "locale": "ar",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطورة متوسطة (109 إلى 140): وفيات داخل المستشفى من 1 إلى 3%",
+            "locale": "ar",
+            "template": "documented-authored-7c682c544ab07ce952f1"
+          },
+          "note": {
+            "text": "تم تحديد فئات الخطورة (≤ 108، 109 إلى 140، > 140) لـ ACS دون ارتفاع مقطع ST.",
+            "locale": "ar",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "احتمال الوفاة داخل المستشفى (مخطط اسمي)",
+                "locale": "ar",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ ١٦٫٠%",
+                "locale": "ar",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  16
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التدبير في المتلازمة التاجية الحادة دون ارتفاع مقطع ST (ESC 2023)",
+                "locale": "ar",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "استراتيجية تداخلية مبكرة (< 24 h)",
+                "locale": "ar",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطورة عالية (> 140): وفيات داخل المستشفى > 3%",
+            "locale": "ar",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "تم تحديد فئات الخطورة (≤ 108، 109 إلى 140، > 140) لـ ACS دون ارتفاع مقطع ST.",
+            "locale": "ar",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "احتمال الوفاة داخل المستشفى (مخطط اسمي)",
+                "locale": "ar",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≥ ٥٢%",
+                "locale": "ar",
+                "template": "documented-authored-1fe331eaeaf93c71c3ae",
+                "sourceNumbers": [
+                  52
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "التدبير في المتلازمة التاجية الحادة دون ارتفاع مقطع ST (ESC 2023)",
+                "locale": "ar",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "استراتيجية تداخلية مبكرة (< 24 h)",
+                "locale": "ar",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطورة عالية (> 140): وفيات داخل المستشفى > 3%",
+            "locale": "ar",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "تم تحديد فئات الخطورة (≤ 108، 109 إلى 140، > 140) لـ ACS دون ارتفاع مقطع ST.",
+            "locale": "ar",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "院内死亡概率（列线图）",
+                "locale": "zh",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 1.0%",
+                "locale": "zh",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非ST段抬高型ACS的处理（ESC 2023）",
+                "locale": "zh",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "住院期间的侵入性策略，按其他标准",
+                "locale": "zh",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低风险（≤ 108）：住院死亡率 < 1%",
+            "locale": "zh",
+            "template": "documented-authored-1e456cb53deb978f7f57"
+          },
+          "note": {
+            "text": "风险分层（≤ 108、109至140、> 140）是为无ST段抬高的ACS定义的。",
+            "locale": "zh",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "院内死亡概率（列线图）",
+                "locale": "zh",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 2.9%",
+                "locale": "zh",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  2.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非ST段抬高型ACS的处理（ESC 2023）",
+                "locale": "zh",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "住院期间的侵入性策略，按其他标准",
+                "locale": "zh",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等风险（109至140）：住院死亡率为1%至3%",
+            "locale": "zh",
+            "template": "documented-authored-7c682c544ab07ce952f1"
+          },
+          "note": {
+            "text": "风险分层（≤ 108、109至140、> 140）是为无ST段抬高的ACS定义的。",
+            "locale": "zh",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "院内死亡概率（列线图）",
+                "locale": "zh",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 16.0%",
+                "locale": "zh",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  16
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非ST段抬高型ACS的处理（ESC 2023）",
+                "locale": "zh",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "早期侵入性策略（< 24 h）",
+                "locale": "zh",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高风险（> 140）：住院死亡率 > 3%",
+            "locale": "zh",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "风险分层（≤ 108、109至140、> 140）是为无ST段抬高的ACS定义的。",
+            "locale": "zh",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "院内死亡概率（列线图）",
+                "locale": "zh",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≥ 52%",
+                "locale": "zh",
+                "template": "documented-authored-1fe331eaeaf93c71c3ae",
+                "sourceNumbers": [
+                  52
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "非ST段抬高型ACS的处理（ESC 2023）",
+                "locale": "zh",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "早期侵入性策略（< 24 h）",
+                "locale": "zh",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高风险（> 140）：住院死亡率 > 3%",
+            "locale": "zh",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "风险分层（≤ 108、109至140、> 140）是为无ST段抬高的ACS定义的。",
+            "locale": "zh",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "院内死亡確率（ノモグラム）",
+                "locale": "ja",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 1.0%",
+                "locale": "ja",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ST上昇を伴わないACSの管理（ESC 2023）",
+                "locale": "ja",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "他の基準に従って、入院中に侵襲的戦略",
+                "locale": "ja",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低リスク（≤ 108）：院内死亡率 < 1%",
+            "locale": "ja",
+            "template": "documented-authored-1e456cb53deb978f7f57"
+          },
+          "note": {
+            "text": "リスク区分（≤ 108、109～140、> 140）は、ST上昇のないACSで定義された。",
+            "locale": "ja",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "院内死亡確率（ノモグラム）",
+                "locale": "ja",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 2.9%",
+                "locale": "ja",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  2.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ST上昇を伴わないACSの管理（ESC 2023）",
+                "locale": "ja",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "他の基準に従って、入院中に侵襲的戦略",
+                "locale": "ja",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "中等リスク（109～140）：院内死亡率1～3%",
+            "locale": "ja",
+            "template": "documented-authored-7c682c544ab07ce952f1"
+          },
+          "note": {
+            "text": "リスク区分（≤ 108、109～140、> 140）は、ST上昇のないACSで定義された。",
+            "locale": "ja",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "院内死亡確率（ノモグラム）",
+                "locale": "ja",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 16.0%",
+                "locale": "ja",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  16
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ST上昇を伴わないACSの管理（ESC 2023）",
+                "locale": "ja",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "早期侵襲的戦略（< 24 h）",
+                "locale": "ja",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高リスク（> 140）：院内死亡率 > 3%",
+            "locale": "ja",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "リスク区分（≤ 108、109～140、> 140）は、ST上昇のないACSで定義された。",
+            "locale": "ja",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "院内死亡確率（ノモグラム）",
+                "locale": "ja",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≥ 52%",
+                "locale": "ja",
+                "template": "documented-authored-1fe331eaeaf93c71c3ae",
+                "sourceNumbers": [
+                  52
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ST上昇を伴わないACSの管理（ESC 2023）",
+                "locale": "ja",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "早期侵襲的戦略（< 24 h）",
+                "locale": "ja",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高リスク（> 140）：院内死亡率 > 3%",
+            "locale": "ja",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "リスク区分（≤ 108、109～140、> 140）は、ST上昇のないACSで定義された。",
+            "locale": "ja",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अस्पताल में मृत्यु की संभावना (नोमोग्राम)",
+                "locale": "hi",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 1.0%",
+                "locale": "hi",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ST उन्नयन रहित ACS में प्रबंधन (ESC 2023)",
+                "locale": "hi",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "अन्य मानदंडों के अनुसार, भर्ती के दौरान इनवेसिव रणनीति",
+                "locale": "hi",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कम जोखिम (≤ 108): अस्पताल मृत्यु दर < 1%",
+            "locale": "hi",
+            "template": "documented-authored-1e456cb53deb978f7f57"
+          },
+          "note": {
+            "text": "जोखिम श्रेणियाँ (≤ 108, 109 से 140, > 140) ST-सेगमेंट उन्नयन के बिना ACS के लिए परिभाषित की गई थीं।",
+            "locale": "hi",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अस्पताल में मृत्यु की संभावना (नोमोग्राम)",
+                "locale": "hi",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 2.9%",
+                "locale": "hi",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  2.9
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ST उन्नयन रहित ACS में प्रबंधन (ESC 2023)",
+                "locale": "hi",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "अन्य मानदंडों के अनुसार, भर्ती के दौरान इनवेसिव रणनीति",
+                "locale": "hi",
+                "template": "documented-authored-96b2cb2055a54e309f9c"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यम जोखिम (109 से 140): अस्पताल में मृत्यु दर 1 से 3%",
+            "locale": "hi",
+            "template": "documented-authored-7c682c544ab07ce952f1"
+          },
+          "note": {
+            "text": "जोखिम श्रेणियाँ (≤ 108, 109 से 140, > 140) ST-सेगमेंट उन्नयन के बिना ACS के लिए परिभाषित की गई थीं।",
+            "locale": "hi",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अस्पताल में मृत्यु की संभावना (नोमोग्राम)",
+                "locale": "hi",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≈ 16.0%",
+                "locale": "hi",
+                "template": "documented-authored-f80fdd7c21cee0f3aad8",
+                "sourceNumbers": [
+                  16
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ST उन्नयन रहित ACS में प्रबंधन (ESC 2023)",
+                "locale": "hi",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "प्रारंभिक इनवेसिव रणनीति (< 24 h)",
+                "locale": "hi",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उच्च जोखिम (> 140): अस्पताल में मृत्यु दर > 3%",
+            "locale": "hi",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "जोखिम श्रेणियाँ (≤ 108, 109 से 140, > 140) ST-सेगमेंट उन्नयन के बिना ACS के लिए परिभाषित की गई थीं।",
+            "locale": "hi",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अस्पताल में मृत्यु की संभावना (नोमोग्राम)",
+                "locale": "hi",
+                "template": "documented-authored-345fc04c54b77ee9a919"
+              },
+              "value": {
+                "text": "≥ 52%",
+                "locale": "hi",
+                "template": "documented-authored-1fe331eaeaf93c71c3ae",
+                "sourceNumbers": [
+                  52
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ST उन्नयन रहित ACS में प्रबंधन (ESC 2023)",
+                "locale": "hi",
+                "template": "documented-authored-8c564cb38999f4b77d6a"
+              },
+              "value": {
+                "text": "प्रारंभिक इनवेसिव रणनीति (< 24 h)",
+                "locale": "hi",
+                "template": "documented-authored-00c5ef3a220157aac8c4"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उच्च जोखिम (> 140): अस्पताल में मृत्यु दर > 3%",
+            "locale": "hi",
+            "template": "documented-authored-ae388faf4a1b0456f787"
+          },
+          "note": {
+            "text": "जोखिम श्रेणियाँ (≤ 108, 109 से 140, > 140) ST-सेगमेंट उन्नयन के बिना ACS के लिए परिभाषित की गई थीं।",
+            "locale": "hi",
+            "template": "documented-authored-c11e3ea8602614bf9dc2"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

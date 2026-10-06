@@ -100,3 +100,55 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low risk (≤ 108): hospital mortality < 1%
+
+| Result details | |
+| --- | --- |
+| Probability of in-hospital death (nomogram) | ≈ 1.0% |
+| ACS without ST-segment elevation management (ESC 2023) | Invasive strategy during hospitalization, according to the other criteria |
+
+The risk ranges (≤ 108, 109 to 140, > 140) were defined for ACS without ST-segment elevation.
+
+
+### 2
+
+Intermediate risk (109 to 140): hospital mortality of 1 to 3%
+
+| Result details | |
+| --- | --- |
+| Probability of in-hospital death (nomogram) | ≈ 2.9% |
+| ACS without ST-segment elevation management (ESC 2023) | Invasive strategy during hospitalization, according to the other criteria |
+
+The risk ranges (≤ 108, 109 to 140, > 140) were defined for ACS without ST-segment elevation.
+
+
+### 3
+
+High risk (> 140): hospital mortality > 3%
+
+| Result details | |
+| --- | --- |
+| Probability of in-hospital death (nomogram) | ≈ 16.0% |
+| ACS without ST-segment elevation management (ESC 2023) | Early invasive strategy (< 24 h) |
+
+The risk ranges (≤ 108, 109 to 140, > 140) were defined for ACS without ST-segment elevation.
+
+
+### 4
+
+High risk (> 140): hospital mortality > 3%
+
+| Result details | |
+| --- | --- |
+| Probability of in-hospital death (nomogram) | ≥ 52% |
+| ACS without ST-segment elevation management (ESC 2023) | Early invasive strategy (< 24 h) |
+
+The risk ranges (≤ 108, 109 to 140, > 140) were defined for ACS without ST-segment elevation.
+

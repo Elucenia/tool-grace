@@ -100,3 +100,55 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Risque faible (≤ 108) : mortalité hospitalière < 1%
+
+| Détails du résultat | |
+| --- | --- |
+| Probabilité de décès hospitalier (nomogramme) | ≈ 1,0% |
+| Prise en charge du SCA sans sus-décalage du segment ST (ESC 2023) | Stratégie invasive pendant l'hospitalisation, selon les autres critères |
+
+Les plages de risque (≤ 108, 109 à 140, > 140) ont été définies pour le SCA sans élévation du segment ST.
+
+
+### 2
+
+Risque intermédiaire (109 à 140) : mortalité hospitalière de 1 à 3%
+
+| Détails du résultat | |
+| --- | --- |
+| Probabilité de décès hospitalier (nomogramme) | ≈ 2,9% |
+| Prise en charge du SCA sans sus-décalage du segment ST (ESC 2023) | Stratégie invasive pendant l'hospitalisation, selon les autres critères |
+
+Les plages de risque (≤ 108, 109 à 140, > 140) ont été définies pour le SCA sans élévation du segment ST.
+
+
+### 3
+
+Risque élevé (> 140) : mortalité hospitalière > 3%
+
+| Détails du résultat | |
+| --- | --- |
+| Probabilité de décès hospitalier (nomogramme) | ≈ 16,0% |
+| Prise en charge du SCA sans sus-décalage du segment ST (ESC 2023) | Stratégie invasive précoce (< 24 h) |
+
+Les plages de risque (≤ 108, 109 à 140, > 140) ont été définies pour le SCA sans élévation du segment ST.
+
+
+### 4
+
+Risque élevé (> 140) : mortalité hospitalière > 3%
+
+| Détails du résultat | |
+| --- | --- |
+| Probabilité de décès hospitalier (nomogramme) | ≥ 52% |
+| Prise en charge du SCA sans sus-décalage du segment ST (ESC 2023) | Stratégie invasive précoce (< 24 h) |
+
+Les plages de risque (≤ 108, 109 à 140, > 140) ont été définies pour le SCA sans élévation du segment ST.
+

@@ -1,0 +1,305 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "grace",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "0e962919117a9e67fe8f40a9c98216a1c6910bf7",
+    "oldEngineSha256": "e2f5017697fa41d03e664df44bb37886eed108fd98046a4b7f371fc31f877fba",
+    "currentEngineSha256": "a6c377609dab9aad441116f1f9223127bc1c09b5bb6b59dacc0603086e7e63d2"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "55 anos, FC 80, PAS 130, Cr 1,0, Killip I, troponina elevada: 41 + 9 + 34 + 7 + 14 = 105",
+      "input": {
+        "idade": 55,
+        "fc": 80,
+        "pas": 130,
+        "cr": 1,
+        "killip": "1",
+        "enz": true,
+        "pcr": false,
+        "st": false
+      },
+      "publicOutput": {
+        "id": "grace",
+        "main": [
+          "105",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "raw": {
+          "score": 105,
+          "prob": 0.9500000000000001
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 105,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "105",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "level": "low",
+        "verdict": "Baixo risco (≤ 108): mortalidade hospitalar &lt; 1%",
+        "rows": [
+          [
+            "Probabilidade de óbito hospitalar (nomograma)",
+            "≈ 1,0%"
+          ],
+          [
+            "Conduta na SCA sem supra de ST (ESC 2023)",
+            "Estratégia invasiva na internação, conforme demais critérios"
+          ]
+        ],
+        "note": "As faixas de risco (≤ 108, 109 a 140, &gt; 140) foram definidas para SCA sem supradesnivelamento de ST.",
+        "raw": {
+          "score": 105,
+          "prob": 0.9500000000000001
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "65 anos, FC 72, PAS 145, Cr 0,9, Killip I, ST e troponina: 58 + 9 + 24 + 7 + 28 + 14 = 140 (2,9%)",
+      "input": {
+        "idade": 65,
+        "fc": 72,
+        "pas": 145,
+        "cr": 0.9,
+        "killip": "1",
+        "st": true,
+        "enz": true,
+        "pcr": false
+      },
+      "publicOutput": {
+        "id": "grace",
+        "main": [
+          "140",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "raw": {
+          "score": 140,
+          "prob": 2.9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 140,
+        "level": "mid",
+        "raw": {
+          "prob": 2.9
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "140",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "level": "mid",
+        "verdict": "Risco intermediário (109 a 140): mortalidade hospitalar de 1 a 3%",
+        "rows": [
+          [
+            "Probabilidade de óbito hospitalar (nomograma)",
+            "≈ 2,9%"
+          ],
+          [
+            "Conduta na SCA sem supra de ST (ESC 2023)",
+            "Estratégia invasiva na internação, conforme demais critérios"
+          ]
+        ],
+        "note": "As faixas de risco (≤ 108, 109 a 140, &gt; 140) foram definidas para SCA sem supradesnivelamento de ST.",
+        "raw": {
+          "score": 140,
+          "prob": 2.9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "72 anos, FC 95, PAS 125, Cr 1,3, Killip II, ST e troponina: 196 (≈ 16%)",
+      "input": {
+        "idade": 72,
+        "fc": 95,
+        "pas": 125,
+        "cr": 1.3,
+        "killip": "2",
+        "st": true,
+        "enz": true,
+        "pcr": false
+      },
+      "publicOutput": {
+        "id": "grace",
+        "main": [
+          "196",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "raw": {
+          "score": 196,
+          "prob": 16
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 196,
+        "level": "high",
+        "raw": {
+          "prob": 16
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "196",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "level": "high",
+        "verdict": "Alto risco (&gt; 140): mortalidade hospitalar &gt; 3%",
+        "rows": [
+          [
+            "Probabilidade de óbito hospitalar (nomograma)",
+            "≈ 16,0%"
+          ],
+          [
+            "Conduta na SCA sem supra de ST (ESC 2023)",
+            "Estratégia invasiva precoce (&lt; 24 h)"
+          ]
+        ],
+        "note": "As faixas de risco (≤ 108, 109 a 140, &gt; 140) foram definidas para SCA sem supradesnivelamento de ST.",
+        "raw": {
+          "score": 196,
+          "prob": 16
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "85 anos, FC 120, PAS 85, Cr 2,5, Killip IV, PCR, ST e troponina: 329 (≥ 52%)",
+      "input": {
+        "idade": 85,
+        "fc": 120,
+        "pas": 85,
+        "cr": 2.5,
+        "killip": "4",
+        "pcr": true,
+        "st": true,
+        "enz": true
+      },
+      "publicOutput": {
+        "id": "grace",
+        "main": [
+          "329",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "raw": {
+          "score": 329,
+          "prob": 52
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 329,
+        "level": "high",
+        "raw": {
+          "prob": 52
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "329",
+          "pontos"
+        ],
+        "label": "Escore GRACE (hospitalar)",
+        "level": "high",
+        "verdict": "Alto risco (&gt; 140): mortalidade hospitalar &gt; 3%",
+        "rows": [
+          [
+            "Probabilidade de óbito hospitalar (nomograma)",
+            "≥ 52%"
+          ],
+          [
+            "Conduta na SCA sem supra de ST (ESC 2023)",
+            "Estratégia invasiva precoce (&lt; 24 h)"
+          ]
+        ],
+        "note": "As faixas de risco (≤ 108, 109 a 140, &gt; 140) foram definidas para SCA sem supradesnivelamento de ST.",
+        "raw": {
+          "score": 329,
+          "prob": 52
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}
